@@ -1,13 +1,17 @@
-function highlight() {
-    //Write your code here
-	bold.style.color = green;
-}
+ // para1.addEventListener("mouseover",highlight)
+ function highlight(){
+	 // para.forEach((word)=>word.style.color="blue")
+    // para.style.color="blue"
+	   var boldWords = document.querySelectorAll('strong');
+  for (var i = 0; i < boldWords.length; i++) {
+    boldWords[i].style.color = 'green';
+  }
 
-let bold = document.getElementsByTagName("strong");
-bold.addEventListener("mouseover" , highlight);
-bold.addEventListener("mouseout" ,return_normal);
-function return_normal() {
-    //Write your code here
+ }
+ function return_normal(){
+     var boldWords = document.querySelectorAll('strong');
+  for (var i = 0; i < boldWords.length; i++) {
+    boldWords[i].style.color = 'black';
+  }
 
-    bold.style.color = black;
-}
+ }
